@@ -15,9 +15,23 @@ export async function POST(req: Request) {
       react: ContactEmail({ name, email, subject, message }),
     });
 
-    return Response.json({ success: true, id: data.id });
+    // Check that data.data exists and has id
+    if (!data.data || !data.data.id) {
+      return new Response(
+        JSON.stringify({ success: false, error: 'No email ID returned' }),
+        { status: 500, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+
+    return new Response(JSON.stringify({ success: true, id: data.data.id }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
   } catch (error) {
     console.error('Email sending error:', error);
-    return Response.json({ error: 'Something went wrong' }, { status: 500 });
+    return new Response(JSON.stringify({ error: 'Something went wrong' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 }
