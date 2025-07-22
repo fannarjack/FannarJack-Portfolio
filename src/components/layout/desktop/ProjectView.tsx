@@ -1,7 +1,5 @@
 import Aurora from '@/components/ui/AuroraBackground';
-
 import BigProjectCard from '../../ui/cards/BigProjectCard';
-import CenteredLayout from '../shared/CenteredLayout';
 import { useTheme } from '@/app/hooks/useTheme';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -116,7 +114,7 @@ export default function DesktopView() {
                     isDark ? 'text-gray-400' : 'text-gray-600'
                   }`}
                 >
-                  Let's build something amazing together
+                  Let&#39;s build something amazing together
                 </p>
                 <Link
                   href="/contact"
@@ -146,15 +144,3 @@ export default function DesktopView() {
     </>
   );
 }
-
-/*
-            <ActionCard
-              header="Want to Collaborate?"
-              sections={[
-                {
-                  content: "Let's build something amazing together",
-                },
-              ]}
-              button="Get in touch"
-            ></ActionCard>
-*/

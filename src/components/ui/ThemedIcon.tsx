@@ -1,5 +1,6 @@
 'use client';
 import { useTheme } from '@/app/hooks/useTheme';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 interface ThemedIconProps {
@@ -17,7 +18,7 @@ export default function ThemedIcon({ name, alt, className }: ThemedIconProps) {
     const themeContext = useTheme();
     theme = themeContext.theme;
   } catch (error) {
-    // ThemeProvider not ready yet, use default
+    console.warn('useTheme failed:', error);
   }
 
   useEffect(() => {
@@ -28,5 +29,13 @@ export default function ThemedIcon({ name, alt, className }: ThemedIconProps) {
   const iconColor = mounted && theme === 'light' ? 'black' : 'white';
   const iconSrc = `/icons/${iconColor}/${name}-${iconColor}.svg`;
 
-  return <img src={iconSrc} alt={alt || name} className={className} />;
+  return (
+    <Image
+      src={iconSrc}
+      alt={alt || name}
+      className={className}
+      width={28} // or whatever size you want
+      height={28}
+    />
+  );
 }

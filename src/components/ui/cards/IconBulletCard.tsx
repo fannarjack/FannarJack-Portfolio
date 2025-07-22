@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import CardBase from './CardBase';
 import ThemedIcon from '../ThemedIcon';
 

@@ -4,7 +4,6 @@ import CircleButton from './buttons/CircleButton';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import ThemeToggle from './ThemeToggle';
 import { useTheme } from '@/app/hooks/useTheme';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -233,8 +233,8 @@ export default function AboutPage() {
                           experiences.
                         </p>
                         <p>
-                          <strong>Teamwork & Projects:</strong> I've worked in
-                          diverse teams, including a project where Danish
+                          <strong>Teamwork & Projects:</strong> I&#39;ve worked
+                          in diverse teams, including a project where Danish
                           students visited Iceland. I traveled to Las Palmas to
                           collaborate with students from Denmark, Spain and
                           Senegal on a cross-cultural team project.
@@ -524,13 +524,13 @@ export default function AboutPage() {
                 isDark ? 'border-gray-700' : 'border-gray-200'
               }`}
             >
-              <h3 className="text-4xl font-light mb-6">Let's Connect</h3>
+              <h3 className="text-4xl font-light mb-6">Let&#39;s Connect</h3>
               <p
                 className={`text-lg font-light mb-8 max-w-2xl mx-auto ${
                   isDark ? 'text-gray-400' : 'text-gray-600'
                 }`}
               >
-                I'm always excited to meet fellow developers, designers, and
+                I&#39;m always excited to meet fellow developers, designers, and
                 anyone passionate about technology.
               </p>
               <Link

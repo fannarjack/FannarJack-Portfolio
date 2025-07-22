@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import CardBase from './CardBase';
 import ThemedIcon from '../ThemedIcon';
 import ProjectButtons from '../ProjectButtons';
@@ -61,43 +60,3 @@ export default function ProjectCard({
     </CardBase>
   );
 }
-
-/*
-<div className="flex justify-center gap-2">
-        <a
-          href={links.code || '#'}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={!links.code ? 'pointer-events-none' : ''}
-        >
-          <button
-            className={`flex items-center gap-2 px-8 py-1 rounded border border-[#eeee] text-white text-sm ${
-              !links.code ? 'bg-[#333] opacity-20 cursor-not-allowed' : ''
-            }`}
-          >
-            <ThemedIcon name="github" alt="GitHub icon" className="w-4 h-4" />
-            Code
-          </button>
-        </a>
-
-        <a
-          href={links.live || '#'}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={!links.live ? 'pointer-events-none' : ''}
-        >
-          <button
-            className={`flex items-center gap-2 px-8 py-1 rounded border border-[#eeee] text-white text-sm ${
-              !links.live ? 'bg-[#333] opacity-20 cursor-not-allowed' : ''
-            }`}
-          >
-            <ThemedIcon
-              name="external-link"
-              alt="Demo icon"
-              className="w-4 h-4"
-            />
-            Demo
-          </button>
-        </a>
-      </div>
-*/

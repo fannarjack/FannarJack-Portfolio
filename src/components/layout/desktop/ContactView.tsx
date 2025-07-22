@@ -16,7 +16,7 @@ import { useTheme } from '@/app/hooks/useTheme';
 import Aurora from '@/components/ui/AuroraBackground';
 
 export default function ProjectInspiredContact() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   const isDark = theme === 'dark';
 
   const [formData, setFormData] = useState({
@@ -121,7 +121,7 @@ export default function ProjectInspiredContact() {
                       isDark ? 'text-gray-400' : 'text-gray-600'
                     }`}
                   >
-                    Thank you for reaching out. I'll get back to you soon.
+                    Thank you for reaching out. I&#39;ll get back to you soon.
                   </p>
                   <button
                     onClick={resetForm}
@@ -170,7 +170,7 @@ export default function ProjectInspiredContact() {
                           Get In Touch
                         </h2>
                         <p className="text-lg leading-relaxed font-light mb-8">
-                          Ready to start a conversation? Here's how you can
+                          Ready to start a conversation? Here&#39;s how you can
                           reach me.
                         </p>
                       </div>

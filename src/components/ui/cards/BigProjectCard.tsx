@@ -1,4 +1,3 @@
-import CardBase from './CardBase';
 import ThemedIcon from '../ThemedIcon';
 import ProjectButtons from '../ProjectButtons';
 import { useTheme } from '@/app/hooks/useTheme';

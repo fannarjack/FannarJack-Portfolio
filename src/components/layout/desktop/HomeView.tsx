@@ -1,13 +1,10 @@
 'use client';
 
 import { useTheme } from '@/app/hooks/useTheme';
-import CenteredLayout from '@/components/layout/shared/CenteredLayout';
 import Aurora from '@/components/ui/AuroraBackground';
 import BigProjectCard from '@/components/ui/cards/BigProjectCard';
-import SimpleTextCard from '@/components/ui/cards/SimpleTextCard';
 import HeroSection from '@/components/ui/HeroSection';
 import ThemedIcon from '@/components/ui/ThemedIcon';
-import Image from 'next/image';
 
 import { useEffect, useState } from 'react';
 
@@ -16,6 +13,7 @@ export default function Home() {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
+  console.log(mousePosition);
   const skills = [
     {
       category: 'Languages & Markup',
@@ -101,11 +99,12 @@ export default function Home() {
                       isDark ? 'text-gray-400' : 'text-gray-600'
                     }`}
                   >
-                    Hey there! I'm Fannar, a web development student from
-                    Reykjavík, Iceland. I've been diving into the world of
+                    Hey there! I&#39;m Fannar, a web development student from
+                    Reykjavík, Iceland. I&#39;ve been diving into the world of
                     coding for about a year now, turning ideas into interactive,
-                    functional websites. It's been an exciting journey, and I'm
-                    eager to keep learning and growing as I build my skills.
+                    functional websites. It&#39;s been an exciting journey, and
+                    I&#39;m eager to keep learning and growing as I build my
+                    skills.
                   </p>
                 </div>
               </div>
@@ -205,8 +204,8 @@ export default function Home() {
                           Featured Work
                         </h3>
                         <p className="text-lg leading-relaxed font-light mb-8">
-                          Here are some projects I've built, a mix of what I’ve
-                          learned and loved doing.
+                          Here are some projects I've built, a mix of what
+                          I&#39;ve learned and loved doing.
                         </p>
                       </div>
                       <div className="flex flex-col gap-12">

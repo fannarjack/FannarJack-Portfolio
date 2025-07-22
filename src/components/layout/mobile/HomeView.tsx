@@ -3,7 +3,6 @@
 import CenteredLayout from '@/components/layout/shared/CenteredLayout';
 import Aurora from '@/components/ui/AuroraBackground';
 import SimpleTextCard from '@/components/ui/cards/SimpleTextCard';
-import HeroSection from '@/components/ui/HeroSection';
 import ThemedIcon from '@/components/ui/ThemedIcon';
 import Image from 'next/image';
 
@@ -12,6 +11,7 @@ import { useEffect, useState } from 'react';
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
+  console.log(mousePosition);
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });

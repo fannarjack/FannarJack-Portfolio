@@ -4,15 +4,13 @@ import { useTheme } from '@/app/hooks/useTheme';
 import React from 'react';
 
 export default function ThemeToggle() {
-  let context;
-  try {
-    context = useTheme();
-  } catch {
-    return null; // Avoid breaking if somehow rendered without provider
+  const context = useTheme();
+
+  if (!context) {
+    // Now check the value, not the hook itself
+    return null;
   }
-
   const { theme, toggleTheme } = context;
-
   return (
     <button
       onClick={toggleTheme}

@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 import CardBase from './CardBase';
-import Image from 'next/image';
 import ThemedIcon from '../ThemedIcon';
 import { ArrowRight } from 'lucide-react';
 
@@ -19,6 +18,8 @@ export default function FormCard({ header }: FormCardProps) {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  console.log(isSubmitting);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -75,7 +76,7 @@ export default function FormCard({ header }: FormCardProps) {
                 Message Sent
               </h3>
               <p className={`text-base sm:text-lg font-light mb-6 sm:mb-8 `}>
-                Thank you for reaching out. I'll get back to you soon.
+                Thank you for reaching out. I&#39;ll get back to you soon.
               </p>
               <button
                 onClick={resetForm}

@@ -39,7 +39,7 @@ const PhotoCarousel = ({
       }
     );
     return () => controlsRef.current?.stop();
-  }, [animate, scope]);
+  }, [animate, scope, moveDistance]);
 
   const handleMouseEnter = () => {
     controlsRef.current?.pause();

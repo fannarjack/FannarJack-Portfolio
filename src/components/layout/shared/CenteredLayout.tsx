@@ -1,6 +1,5 @@
 'use client';
 import { ReactNode } from 'react';
-import Navbar from '../ui/Navbar';
 
 export default function CenteredLayout({ children }: { children: ReactNode }) {
   return (
