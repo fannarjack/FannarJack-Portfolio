@@ -204,7 +204,7 @@ export default function Home() {
                           Featured Work
                         </h3>
                         <p className="text-lg leading-relaxed font-light mb-8">
-                          Here are some projects I've built, a mix of what
+                          Here are some projects I&#39;ve built, a mix of what
                           I&#39;ve learned and loved doing.
                         </p>
                       </div>
