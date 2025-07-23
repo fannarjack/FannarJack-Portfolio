@@ -11,8 +11,12 @@ import { useEffect, useState } from 'react';
 export default function Home() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
   const { theme } = useTheme();
   const isDark = theme === 'dark';
+
+  // ESLINT problem
+  void mousePosition;
 
   const skills = [
     {
