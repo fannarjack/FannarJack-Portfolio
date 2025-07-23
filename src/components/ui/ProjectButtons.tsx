@@ -21,7 +21,7 @@ export default function ProjectButtons({ links }: ProjectButtonsProps) {
         : 'border-[#666] text-[#999] opacity-20 cursor-not-allowed pointer-events-none'
     }`}
       >
-        <ThemedIcon name="github" alt="GitHub icon" className="w-4 h-4" />
+        <ThemedIcon name="Github" alt="GitHub icon" className="w-4 h-4" />
         Code
       </a>
 
@@ -36,7 +36,7 @@ export default function ProjectButtons({ links }: ProjectButtonsProps) {
         : 'border-[#666] text-[#999] opacity-20 cursor-not-allowed pointer-events-none'
     }`}
       >
-        <ThemedIcon name="external-link" alt="Demo icon" className="w-4 h-4" />
+        <ThemedIcon name="External-link" alt="Demo icon" className="w-4 h-4" />
         Demo
       </a>
     </div>
