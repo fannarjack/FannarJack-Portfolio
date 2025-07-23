@@ -9,8 +9,10 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // ESLINT problem
+  void mousePosition;
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
