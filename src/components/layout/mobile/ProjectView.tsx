@@ -14,19 +14,20 @@ export default function MobileView() {
 
         <ProjectCard
           title="Patient Portal"
-          description="During my internship, worked on a website for patients."
+          description="Final Project for my studies, track trusted Telegram crypto callers, share memecoin/altcoin articles, and provide scam safety tips."
           year="2025"
           solo={true}
           techstack={[
-            'Angular',
+            'Next.js',
+            'React',
             'TypeScript',
-            'Material UI',
-            'SCSS',
-            'Firebase',
+            'Tailwind CSS',
+            'Contentful',
+            'Lucide React',
           ]}
           links={{
-            code: 'https://github.com/fannarjack/portfolio',
-            live: '',
+            code: 'https://github.com/fannarjack/lokaverk',
+            live: 'https://lokaverk.vercel.app/',
           }}
         />
         <ProjectCard
@@ -36,7 +37,7 @@ export default function MobileView() {
           solo={false}
           techstack={['React', 'TypeScript', 'TailwindCSS', 'Next.js']}
           links={{
-            code: 'https://github.com/ln0185/WebCompetition',
+            code: 'https://github.com/fannarjack/WebCompetition',
             live: 'https://web-competition-lemon.vercel.app/',
           }}
         />
@@ -56,6 +57,25 @@ export default function MobileView() {
           links={{
             code: 'https://github.com/fannarjack/mod4-group-project',
             live: 'https://nordur.netlify.app/',
+          }}
+        />
+        <ProjectCard
+          title="Vefskólinn"
+          description="Learning Management System (LMS) for Vefskóli at Tækniskóli. Features user registration, project tracking, feedback, and grading."
+          year="2024"
+          solo={false}
+          techstack={[
+            'Next.js',
+            'React',
+            'TypeScript',
+            'Styled-Components',
+            'Toast UI Calendar',
+            'Framer Motion',
+            'Lucide React',
+          ]}
+          links={{
+            code: 'https://github.com/fannarjack/io.vefskoliv0',
+            live: '',
           }}
         />
 

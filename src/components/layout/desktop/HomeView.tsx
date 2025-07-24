@@ -226,7 +226,7 @@ export default function Home() {
                             'Next.js',
                           ]}
                           links={{
-                            code: 'https://github.com/ln0185/WebCompetition',
+                            code: 'https://github.com/fannarjack/WebCompetition',
                             live: 'https://web-competition-lemon.vercel.app/',
                           }}
                         />
