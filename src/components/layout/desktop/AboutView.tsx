@@ -36,7 +36,7 @@ export default function AboutPage() {
 
   const experiences = [
     {
-      period: '2024 - Present',
+      period: '2025 - Present',
       role: 'Intern at Kvikna Medical',
       description:
         'Currently interning where I quickly picked up Angular and contribute to real projects, gaining hands-on experience in a professional development environment.',
