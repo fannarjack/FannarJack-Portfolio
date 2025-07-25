@@ -28,10 +28,10 @@ export const metadata: Metadata = {
   authors: [{ name: 'Fannar Hrafn Jack Hilmarsson' }],
   creator: 'Fannar Hrafn Jack Hilmarsson',
   openGraph: {
-    title: 'Your Name | Portfolio',
+    title: 'Fannar Jack | Portfolio',
     description:
       'Check out my portfolio showcasing projects built with React, TypeScript, and more.',
-    url: 'https://yourdomain.com', //replace when hosting
+    url: 'https://www.fannarjack.is/',
     siteName: 'Fannar | Portfolio',
     locale: 'en_US',
     type: 'website',
