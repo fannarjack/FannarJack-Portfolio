@@ -5,7 +5,6 @@ import { Inter, Montserrat } from 'next/font/google';
 import Navbar from '@/components/ui/Navbar';
 import { ThemeProvider } from './hooks/useTheme';
 import ThemeToggle from '@/components/ui/ThemeToggle';
-import Head from 'next/head';
 
 const inter = Inter({
   subsets: ['latin'],
