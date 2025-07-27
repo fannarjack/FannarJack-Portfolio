@@ -37,6 +37,11 @@ body {
   text-underline-offset: 3px;
 }
 
+::selection {
+  background: #00ffe0;
+  color: #1a1a1a;
+}
+
 /* Typography styles */
 h1 {
   color: var(--foreground-heading);

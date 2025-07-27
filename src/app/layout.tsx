@@ -5,6 +5,7 @@ import { Inter, Montserrat } from 'next/font/google';
 import Navbar from '@/components/ui/Navbar';
 import { ThemeProvider } from './hooks/useTheme';
 import ThemeToggle from '@/components/ui/ThemeToggle';
+import Head from 'next/head';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,6 +25,25 @@ export const metadata: Metadata = {
   title: 'Fannar | Portfolio',
   description:
     'Frontend developer with a passion for building clean, accessible, and engaging web experiences.',
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/favicon.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      url: '/favicon.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      url: '/favicon.png',
+    },
+  ],
   keywords: ['Web Developer', 'Frontend', 'React', 'Next.js', 'Portfolio'],
   authors: [{ name: 'Fannar Hrafn Jack Hilmarsson' }],
   creator: 'Fannar Hrafn Jack Hilmarsson',
